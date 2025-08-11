@@ -10,9 +10,9 @@ internal class Program
         while (true)
         {
             Console.Clear();
-            ImprimirMenu();
+            ImprimirMenuPrincipal();
 
-            int opcao = LerOpcaoMenu();
+            int opcao = ConsoleUtils.LerOpcaoNoIntervalo("Escolha uma opção: ", 0, 2);
 
             if (opcao == 0)
             {
@@ -20,84 +20,25 @@ internal class Program
                 return;
             }
 
-            double primeiroValor = LerNumero("Digite o primeiro valor: ");
-            double segundoValor = LerNumero("Digite o segundo valor: ");
-
-            switch (opcao)
+            if (opcao == 1)
             {
-                case 1:
-                    ExibirResultado(primeiroValor + segundoValor, "Soma");
-                    break;
-                case 2:
-                    ExibirResultado(primeiroValor - segundoValor, "Subtração");
-                    break;
-                case 3:
-                    ExibirResultado(primeiroValor * segundoValor, "Multiplicação");
-                    break;
-                case 4:
-                    if (segundoValor == 0)
-                    {
-                        Console.WriteLine("Não é possível dividir por zero.");
-                    }
-                    else
-                    {
-                        ExibirResultado(primeiroValor / segundoValor, "Divisão");
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Opção inválida.");
-                    break;
+                Calculadora.Executar();
             }
-
-            Console.WriteLine();
-            Console.Write("Pressione Enter para continuar...");
-            Console.ReadLine();
+            else if (opcao == 2)
+            {
+                SomaEMedia.Executar();
+            }
         }
     }
 
-    private static void ImprimirMenu()
+    private static void ImprimirMenuPrincipal()
     {
-        Console.WriteLine("Calculadora");
+        Console.WriteLine("Menu Principal");
         Console.WriteLine("====================");
-        Console.WriteLine("1 - Somar");
-        Console.WriteLine("2 - Subtrair");
-        Console.WriteLine("3 - Multiplicar");
-        Console.WriteLine("4 - Dividir");
+        Console.WriteLine("1 - Calculadora");
+        Console.WriteLine("2 - Soma e média de N números");
         Console.WriteLine("0 - Sair");
         Console.WriteLine();
-    }
-
-    private static int LerOpcaoMenu()
-    {
-        while (true)
-        {
-            Console.Write("Escolha uma opção: ");
-            string? entrada = Console.ReadLine();
-            if (int.TryParse(entrada, out int opcao) && opcao is >= 0 and <= 4)
-            {
-                return opcao;
-            }
-            Console.WriteLine("Opção inválida. Tente novamente (0 a 4).");
-        }
-    }
-
-    private static double LerNumero(string prompt)
-    {
-        while (true)
-        {
-            Console.Write(prompt);
-            string? entrada = Console.ReadLine();
-            if (double.TryParse(entrada, NumberStyles.Number, CultureInfo.CurrentCulture, out double valor))
-            {
-                return valor;
-            }
-            Console.WriteLine("Valor inválido. Digite um número válido.");
-        }
-    }
-
-    private static void ExibirResultado(double resultado, string operacao)
-    {
-        Console.WriteLine($"Resultado da {operacao}: {resultado}");
     }
 }
 
