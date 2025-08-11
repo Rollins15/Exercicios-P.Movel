@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\source\\repos\\Exercicio2\\Exercicio2\\Exercicio2.csproj": {}
+    "C:\\Users\\hp\\Source\\Repos\\Exercicios-P.Movel\\Exercicio2\\Exercicio2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\source\\repos\\Exercicio2\\Exercicio2\\Exercicio2.csproj": {
+    "C:\\Users\\hp\\Source\\Repos\\Exercicios-P.Movel\\Exercicio2\\Exercicio2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Exercicio2\\Exercicio2\\Exercicio2.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Source\\Repos\\Exercicios-P.Movel\\Exercicio2\\Exercicio2.csproj",
         "projectName": "Exercicio2",
-        "projectPath": "C:\\Users\\hp\\source\\repos\\Exercicio2\\Exercicio2\\Exercicio2.csproj",
+        "projectPath": "C:\\Users\\hp\\Source\\Repos\\Exercicios-P.Movel\\Exercicio2\\Exercicio2.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\source\\repos\\Exercicio2\\Exercicio2\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Source\\Repos\\Exercicios-P.Movel\\Exercicio2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
