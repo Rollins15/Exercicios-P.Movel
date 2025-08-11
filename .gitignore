@@ -1,0 +1,45 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Others
+*.log
+*.tmp
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# Rider IDE
+.idea/
+
+# DotCover
+*.dotCover
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# StyleCop
+StyleCopReport.xml
+
+# Coverage results
+*.coverage
+*.coveragexml
+
+# Others
+*.vsmdi
+*.testsettings
