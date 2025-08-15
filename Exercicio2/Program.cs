@@ -12,7 +12,7 @@ internal class Program
             Console.Clear();
             ImprimirMenuPrincipal();
 
-            int opcao = ConsoleUtils.LerOpcaoNoIntervalo("Escolha uma opção: ", 0, 2);
+            int opcao = ConsoleUtils.LerOpcaoNoIntervalo("Escolha uma opção: ", 0, 3);
 
             if (opcao == 0)
             {
@@ -28,6 +28,10 @@ internal class Program
             {
                 SomaEMedia.Executar();
             }
+            else if (opcao == 3)
+            {
+                DroneController.Executar();
+            }
         }
     }
 
@@ -37,6 +41,7 @@ internal class Program
         Console.WriteLine("====================");
         Console.WriteLine("1 - Calculadora");
         Console.WriteLine("2 - Soma e média de N números");
+        Console.WriteLine("3 - Controle de Drone");
         Console.WriteLine("0 - Sair");
         Console.WriteLine();
     }
